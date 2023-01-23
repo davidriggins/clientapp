@@ -2,6 +2,7 @@
   <div class="home">
     <h1>Home</h1>
     <!-- <webix-ui :config="{ view: 'text' }" /> -->
+    <webix-ui :config="grid1" />
   </div>
 </template>
 
@@ -14,7 +15,7 @@ var grid1 = {
     {
       id: "year",
       header: [
-        "Outcome",
+        "Date",
         {
           content: "multiSelectFilter",
           suggest: { fitMaster: false, width: 200 },
@@ -28,11 +29,11 @@ var grid1 = {
   url: "https://desktopqa/libs/webix-pro/8.0.1//samples/15_datatable/01_loading/data/data.json",
 };
 
-webix.ui({
-  view: "scrollview",
-  scroll: "y",
-  body: {
-    rows: [{ view: "label", label: "JSON" }, grid1],
-  },
-});
+// webix.ui({
+//   view: "scrollview",
+//   scroll: "y",
+//   body: {
+//     rows: [{ view: "label", label: "JSON" }, grid1],
+//   },
+// });
 </script>
