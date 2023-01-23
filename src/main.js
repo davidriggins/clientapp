@@ -6,6 +6,7 @@ import App from "./App.vue";
 import router from "./router";
 
 import "./assets/main.css";
+
 let app = createApp(App);
 Object.assign(window, { Vue: { component: app.component } });
 webix.require(
