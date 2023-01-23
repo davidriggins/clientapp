@@ -11,4 +11,8 @@ module.exports = {
   parserOptions: {
     ecmaVersion: "latest",
   },
+
+  globals: {
+    webix: "writeable",
+  },
 };
